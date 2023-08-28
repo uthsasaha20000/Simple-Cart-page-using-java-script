@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>My HTML Template</title>
+
+</head>
+
+<style>
+  .remove{
+    background-color: rgb(187, 49, 15);
+    padding:3px;
+    border-radius: 10px;
+    
+  }
+  #cart li{
+    font-size: 20px;
+  }
+</style>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <h1 style="text-align: center;"> Simple Cart web page</h1>
+    <div class="container mt-5" id="list">
+        <h3>Product List</h3>
+        <div class="row">
+         
+            <div class="card" style="width: 18rem;" id="1">
+                
+                <div class="card-body">
+                  <h5 class="card-title">Shirt</h5>
+                  
+                  <button class="btn btn-primary">Add to cart</button>
+                </div> 
+              </div>
+            <div class="card" style="width: 18rem;" id="2">
+                
+                <div class="card-body">
+                  <h5 class="card-title">Pant</h5>
+                  
+                  <button class="btn btn-primary">Add to cart</button>
+                </div>
+              </div> 
+            <div class="card" style="width: 18rem;" id="3">
+                
+                <div class="card-body">
+                  <h5 class="card-title">Hat</h5>
+                  
+                  <button class="btn btn-primary">Add to cart</button>
+                </div>
+              </div> 
+            <div class="card" style="width: 18rem;" id="4">
+                
+                <div class="card-body">
+                  <h5 class="card-title">Cap</h5>
+                  
+                  <button class="btn btn-primary">Add to cart</button>
+                </div>
+              </div> 
+
+
+        </div> 
+        </br> 
+        <div class="row">
+         
+            <div class="card" style="width: 18rem;" id="5">
+                
+                <div class="card-body">
+                  <h5 class="card-title">Socks</h5>
+                  
+                  <button class="btn btn-primary">Add to cart</button>
+                </div>
+              </div>
+            <div class="card" style="width: 18rem;" id="6">
+                
+                <div class="card-body">
+                  <h5 class="card-title">Shoe</h5>
+                  
+                  <button class="btn btn-primary">Add to cart</button>
+                </div>
+              </div>
+            <div class="card" style="width: 18rem;" id="7">
+                
+                <div class="card-body">
+                  <h5 class="card-title">Sunglass</h5>
+                  
+                  <button class="btn btn-primary">Add to cart</button>
+                </div>
+              </div>
+            <div class="card" style="width: 18rem;" id="8">
+                
+                <div class="card-body">
+                  <h5 class="card-title">T shirt</h5>
+                  
+                  <button class="btn btn-primary">Add to cart</button>
+                </div>
+              </div>
+
+
+        </div> 
+
+
+      </div>
+    </br>
+    <div class="container" id="cart">
+      <h3>Cart</h3></br>
+        
+      </div>
+
+     
+      <style>
+        body{
+            background-color:rgba(146, 155, 144, 0.987);
+        }
+        .container{
+            min-height:300px;
+            background-color: antiquewhite;
+            border-radius: 19px;
+        }
+        #cart{
+            overflow:auto;
+        }
+    </style>
+    <script>
+      var cart=document.querySelector('#cart') 
+      var cards=document.querySelectorAll(".card")
+      cards.forEach(function(card) {
+       var anchor = card.querySelector("button");
+       anchor.addEventListener("click", addToCart);
+     });
+     
+    
+       function addToCart(event) {
+        var product = event.target.parentElement.querySelector(".card-title").textContent;
+        var cartItem = document.createElement('div');
+        var li= document.createElement('li');
+        li.appendChild(document.createTextNode(product +" "))
+        var remove_button=document.createElement('button');
+        remove_button.textContent='remove';
+        remove_button.className="remove";
+        li.appendChild(remove_button)
+        cart.appendChild(li);
+        alert(remove_button);
+  
+     }
+     </script>
+</body>
+
+</html>

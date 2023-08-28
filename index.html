@@ -141,7 +141,9 @@
         remove_button.className="remove";
         li.appendChild(remove_button)
         cart.appendChild(li);
-        alert(remove_button);
+        remove_button.addEventListener('click', function() {
+        cart.removeChild(li); // Remove the cart item when "Remove" is clicked
+     });
   
      }
      </script>

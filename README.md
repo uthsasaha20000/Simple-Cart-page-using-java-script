@@ -14,3 +14,13 @@ In this webpage we can add certain product from list to cart. We can't add same 
 
 # Preview 
 ![Cart Page](images/cart_page.png)
+
+<details>
+<summary>How to create a markdown file</summary>
+
+- You will get some resources to create markdown files below
+    - [**Short video**](https://youtu.be/bpdvNwvEeSE?si=hEx8te613_ZZa1u-)
+    - [Long  video](https://youtu.be/FEa2diI2qgA?si=3DZYSaYUrQtldm0D)
+
+- You can always find more such resources if you [search](https://www.youtube.com/results?search_query=markdown+file) on Youtube
+</details>

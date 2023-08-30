@@ -5,7 +5,7 @@ A simple cart page where you can add items to the cart and remove items from the
 # Details
 In this webpage we can add certain product from list to cart. We can't add same item multiple times in cart and each items in cart section assigned with a "remove" button that remove the product from cart section. 
 
-# Live server Link
+# Live server 
 - You will find the live server link [here](https://uthsasaha20000.github.io/Simple-Cart-page-using-java-script/) 
 
 # Features
